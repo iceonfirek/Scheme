@@ -1,1 +1,2 @@
-(- 3 4)
+(define v (list 1 2 3 4 5 6 7))
+(cadddr v)
