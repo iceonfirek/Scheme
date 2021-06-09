@@ -13,8 +13,15 @@
           (* n (fact2 (- n 2))))))
 
 
-(define fact3 
+(define fact3
     (lambda (n)
       (if (= n 0)
           1
           (* n (fact3 (- n 3))))))
+
+
+(define fact4
+    (lambda (n)
+      (if (= n 0)
+           1
+          (* n (fact4 (% n 2)))))) 

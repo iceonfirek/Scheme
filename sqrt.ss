@@ -1,0 +1,11 @@
+(define (average x y) (/ (+ x y) 2))
+(define (square x) (* x x))
+(define (sqrt x)
+        (define (improve G) (average G (/ x G)))
+        (define (goodenough G) (< (abs (- (square G) x)) .00001))
+        (define (try G)
+                (if (goodenough G)
+                     G
+                     (try (improve G))))
+        (try 1))
+(display (format "~0,4F" (sqrt 80)))
