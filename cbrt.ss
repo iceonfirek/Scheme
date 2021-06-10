@@ -1,0 +1,11 @@
+(define (average x y) (/ (+ x y) 2))
+(define (cube x) (* x x x))
+(define (cbrt x)
+        (define (improve G) (average G (/ x G)))
+        (define (goodenough G) (< (abs (- (cube G) x)) 1))
+        (define (try G)
+                (if (goodenough G)
+                     G
+                     (try (improve G))))
+        (try 1))
+(display (format "~0,4F" (cbrt 27)))
