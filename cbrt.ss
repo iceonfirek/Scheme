@@ -1,8 +1,9 @@
 (define (average x y) (/ (+ x y) 2))
+(define (square x) (* x x))
 (define (cube x) (* x x x))
 (define (cbrt x)
-        (define (improve G) (average G (/ x G)))
-        (define (goodenough G) (< (abs (- (cube G) x)) 1))
+        (define (improve G) (/ (+ (/ x (square G)) (* 2 G)) 3))
+        (define (goodenough G) (< (abs (- (cube G) x)) (abs (* G .0001))))
         (define (try G)
                 (if (goodenough G)
                      G

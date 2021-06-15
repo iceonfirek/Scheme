@@ -7,7 +7,7 @@
                 (if (goodenough G)
                      G
                      (try (improve G))))
-        (try 1))
+        (try 1.0))
 (display (format "~0,4F" (sqrt 80)))
 
 
