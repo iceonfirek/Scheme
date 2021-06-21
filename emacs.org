@@ -41,3 +41,6 @@ C-c C-x C-v (org-toggle-inline-images)
 
 * counsel-projectil
 C-c C-o open file window, o action to the file.
+
+* magit
+s stage, u unstage, c comit, c-c c-c which comment.
