@@ -1,6 +1,5 @@
 
 * system
-
 sudo pmset -a disablesleep 1
 open -n /Applications/
 sudo codesign --force --deep --sign - /~
@@ -9,8 +8,6 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 mac kill process  ps -ax | grep , killall 
 
 * emacs
-
-
 eval-buffer ;;刷新emacs
 C-h f function RET ( describe-function ) displays the documentation of Lisp function
 CLM/command-  global-command-mode ;;右侧记录
@@ -26,8 +23,6 @@ use C-c C-c to save
 C-h f describe function
 counsel load theme
 buffer menu -> d -> x to delete marked buffers
-
-
 
 * paredit
 #+ATTR_ORG: :width 1200
@@ -49,4 +44,4 @@ s stage, u unstage, c comit, c-c c-c which comment, P -f p, force push,
 C-u C-spc mark pop,
 
 * term mode
-C-c C-j, line mode.
+C-c C-j, line mode. /use shell/
