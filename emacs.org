@@ -32,7 +32,7 @@ buffer menu -> d -> x to delete marked buffers
 ^ drill up, j search, g refresh, d mark, x excute, 0 w copy file path, 
 
 * org-mode
-C-c C-x C-v (org-toggle-inline-images) 
+C-c C-x C-v (org-toggle-inline-images), custom group -> org faces.
 
 * counsel-projectil
 C-c C-o open file window, o action to the file.
@@ -45,3 +45,7 @@ C-u C-spc mark pop,
 
 * term mode
 C-c C-j, line mode. /use shell/
+
+* web browser
+widget-webkit-browse-url
+
