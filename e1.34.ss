@@ -1,0 +1,7 @@
+(define (f g) (g 25550389378883492384557895))
+(define square (lambda (x) (* x x)))
+(define timed-ff (lambda (x start-time)
+		   (display (f x))
+		   (newline)
+		   (- (runtime) start-time)))
+(define (runtime) (real-time))

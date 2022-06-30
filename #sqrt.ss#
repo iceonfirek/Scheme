@@ -11,3 +11,6 @@
 (sqrt 80)
 (sqrt 81)
 (sqrt 99)
+(define (f*c a b) (* a b))
+(define (f* a b) (- a b))
+(define (fff a b) (* a b))
