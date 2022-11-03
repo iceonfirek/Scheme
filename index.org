@@ -80,7 +80,7 @@
 
 #+name: common-pretty-includes
 #+begin_quote
-#!/usr/bin/chibi-scheme
+#!/usr/local/bin/chibi-scheme
 (import (scheme small))
 (import (srfi 159))
 
@@ -259,19 +259,9 @@ chibi-scheme -I ~/DevLinux/srfi-sicp-prerequisites/ -msrfi.199 -p "(sicp-hellowo
 
  #+end_src
 
- #+RESULTS[20a4e1d7ff2772afc03b0ee16e1dbf4ddc9fde44]:
+ #+RESULTS[3b04122f87fe5c49a2a9299915cf7a56e63b5f38]:
  #+begin_src scheme
- 10
- 9
- 8
- 3
- 6
- 19
- #f
- 4
- 16
- 5
- 16
+ Geiser Interpreter produced no output
  #+end_src
 
 *** DONE Exercise 1.2 Prefix form
@@ -288,7 +278,7 @@ chibi-scheme -I ~/DevLinux/srfi-sicp-prerequisites/ -msrfi.199 -p "(sicp-hellowo
 *** DONE Exercise 1.3 Sum of squares
     CLOSED: [2020-02-28 Fri 12:01]
 
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
  (import (scheme small))
  (import (srfi 95))
  (import (srfi 159))
@@ -25848,7 +25838,7 @@ the rest, ~interleave~ would run indefinitely.
 (1 1 1) (1 2 2) (2 2 2) (1 2 3) (2 3 3) (1 3 3) (3 3 3) (1 2 4) (2 3 4) (1 3 4) 
 #+end_src
 
-#+begin_src shell :exports both :results output scalar code :shebang "#! /usr/bin/chibi-scheme -xscheme.r5rs"
+#+begin_src shell :exports both :results output scalar code :shebang "#! /usr/local/bin/chibi-scheme -xscheme.r5rs"
     <<streams-common>>
     <<streams-multimap>>
     <<streams-2>>
@@ -26648,7 +26638,7 @@ This took me about 8 working hours to figure out.
 #+end_quote
 
 #+header: :stdin s-input-test4
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<s-eval>>
@@ -26684,7 +26674,7 @@ ok
 #+end_src
 
 #+header: :stdin s-input-test4
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<s-eval>>
@@ -26935,7 +26925,7 @@ ok
 Some tests.
 
 #+header: :stdin s-input-test5
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -27121,7 +27111,7 @@ a
 #+end_example
 
 #+header: :stdin s-input-test5
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -27289,7 +27279,7 @@ clause"))
 
 
 #+header: :stdin s-input-test-and-or
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
   <<s-glue1>>
   <<s-apply>>
   <<put-and-get>>
@@ -27496,7 +27486,7 @@ clause"))
 
 
 #+header: :stdin s-input-test-cond-arrow
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -27701,7 +27691,7 @@ clause"))
 
 
 #+header: :stdin s-input-test-let
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -27932,7 +27922,7 @@ clause"))
 #+end_example
 
 #+header: :stdin s-input-test-let-star
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -28178,7 +28168,7 @@ clause"))
 #+end_example
 
 #+header: :stdin s-input-test-let-named
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -28440,7 +28430,7 @@ x
 
 
 #+header: :stdin s-input-until
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -28704,7 +28694,7 @@ x
 #+end_src
 
 #+header: :stdin s-input-modifying-syntax
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -29101,7 +29091,7 @@ Note that the :stdin header is the same as in the "Exercise 4.9
 Implementing until".
 
 #+header: :stdin s-input-list-of-bindings
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -29418,7 +29408,7 @@ x
 #+end_src
 
 #+header: :stdin s-input-list-of-bindings-better-abstractions
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -29707,7 +29697,7 @@ y
 
 
 #+header: :stdin s-input-make-unbound
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -30064,7 +30054,7 @@ it myself.
 #+end_example
 
 #+header: :stdin s-input-test1
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 (import (scheme small))
 (define a (read))
 (display a)
@@ -30082,7 +30072,7 @@ test
 
 
 #+header: :stdin s-input-test2
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 (import (scheme small))
 (display "Try evaluate\n")
 (define a (read))
@@ -30119,7 +30109,7 @@ Try evaluate
 #+END_EXAMPLE
 
 #+header: :stdin s-input-test3
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<s-eval>>
@@ -30304,7 +30294,7 @@ x
 #+end_example
 
 #+header: :stdin s-input-internal-definitions
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -30829,7 +30819,7 @@ x
 #+end_example
 
 #+header: :stdin s-input-letrec
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-apply>>
 <<put-and-get>>
@@ -31443,7 +31433,7 @@ x
 
 
 #+header: :stdin s-input-analyze
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-list-of-values-left-to-right>>
 <<s-analyze-eval>>
@@ -31628,7 +31618,7 @@ a
 
 
 #+header: :stdin s-input-analyze-let
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-list-of-values-left-to-right>>
 <<s-analyze-eval-with-let>>
@@ -31806,7 +31796,7 @@ different interpreters.
 
 #+header: :stdin s-input-analyze-time
 #+name: analyzing-speed-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
   <<s-glue1>>
   <<s-list-of-values-left-to-right>>
   <<s-analyze-eval-with-let>>
@@ -31874,7 +31864,7 @@ ok
 
 #+header: :stdin s-input-analyze-time
 #+name: original-speed-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
   <<s-glue1>>
   <<s-apply>>
   <<put-and-get>>
@@ -32204,7 +32194,7 @@ this doesn't fit our purpose.
 #+end_example
 
 #+header: :stdin s-lazy-input-test1
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32247,7 +32237,7 @@ ok
 #+end_src
 
 #+header: :stdin s-lazy-input-test1
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32311,7 +32301,7 @@ count
 #+end_example
 
 #+header: :stdin s-lazy-input-4-27
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32414,7 +32404,7 @@ the sequence of operations (a compound procedure) or a primitive procedure.
 #+end_example
 
 #+header: :stdin s-lazy-input-memo-slow
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32474,7 +32464,7 @@ ok
 
 
 #+header: :stdin s-lazy-input-memo-slow
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32555,7 +32545,7 @@ count
 #+end_example
 
 #+header: :stdin s-lazy-input-memoization
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32610,7 +32600,7 @@ count
 #+end_src
 
 #+header: :stdin s-lazy-input-memoization
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32699,7 +32689,7 @@ right, it doesn't eliminate Cy's concern.
 #+end_example
 
 #+header: :stdin s-lazy-input-for-each
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32766,7 +32756,7 @@ done
 #+end_example
 
 #+header: :stdin s-lazy-input-cy-example
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -32816,7 +32806,7 @@ ok
 #+end_src
 
 #+header: :stdin s-lazy-input-cy-example
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -33045,7 +33035,7 @@ d)rewrite actual-value
 
 
 #+header: :stdin s-lazy-input-semilazy
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -33152,7 +33142,7 @@ y)
 #+end_example
 
 #+header: :stdin s-lazy-input-streams-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -33297,7 +33287,7 @@ Seems to work.
 #+end_example
 
 #+header: :stdin s-lazy-input-streams-trees
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -33452,7 +33442,7 @@ Yay, a tree. You can't do it with simple "streams".
 
 
 #+header: :stdin s-lazy-input-lazy-quote
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<put-and-get>>
 <<s-lazy-eval-implementation>>
@@ -33658,7 +33648,7 @@ I will set the default depth of printing to 10 just because it seems reasonable.
 
 
 #+header: :stdin s-lazy-input-lazy-list-print
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 
 <<s-glue1>>
 <<put-and-get>>
@@ -33924,7 +33914,7 @@ EOF
 #+end_src
 
 #+header: :stdin s-input-prime-sum-pair-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -34095,7 +34085,7 @@ EOF
 
 
 #+header: :stdin s-amb-input-pythagorean-triples
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -34290,7 +34280,7 @@ EOF
 
 
 #+header: :stdin s-amb-input-pythagorean-triples-infinite
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -34516,7 +34506,7 @@ EOF
 
 
 #+header: :stdin s-amb-input-multiple-dwelling-example
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -34654,7 +34644,7 @@ EOF
 
 
 #+header: :stdin s-amb-input-multiple-dwelling-not-same-floor
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -34821,7 +34811,7 @@ floors it is \[\prod_i^m(n-i)\].
 
 
 #+header: :stdin s-amb-input-multiple-dwelling-more-efficient
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -35043,7 +35033,7 @@ this is even as efficient as a naive implementation can be.
 
 
 #+header: :stdin s-amb-input-liars
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -35199,7 +35189,7 @@ try-again
 
 
 #+header: :stdin s-amb-input-problematic-recreations
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -35342,7 +35332,7 @@ Exercise 4.43, the Louis's version of the eight queens.
 
 
 #+header: :stdin s-amb-input-queens
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -35523,7 +35513,7 @@ try-again
 
 
 #+header: :stdin s-amb-input-parser-test-simple
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -35743,7 +35733,7 @@ try-again
 
 
 #+header: :stdin s-amb-input-parser-test-better
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -35954,7 +35944,7 @@ try-again
 
 
 #+header: :stdin s-amb-input-parser-five-parses
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -36253,7 +36243,7 @@ Let's try!
 
 
 #+header: :stdin s-amb-parse-verb-phrase-louis
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results none
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results none
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -36346,7 +36336,7 @@ sentences to the parsing system.
 
 
 #+header: :stdin s-amb-input-parser-extending-grammar
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -36585,7 +36575,7 @@ try-again
 
 
 #+header: :stdin phrase-generator
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb>>
@@ -37034,7 +37024,7 @@ try-again
 #+end_example
 
 #+header: :stdin s-amb-first-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 
 <<s-amb-amb-implementation>>
@@ -37174,7 +37164,7 @@ try-again
 #+end_example
 
 #+header: :stdin s-amb-ramb-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 
 <<s-amb-amb-implementation>>
@@ -37331,7 +37321,7 @@ try-again
 
 
 #+header: :stdin s-amb-permanent-set-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb-pset>>
@@ -37449,7 +37439,7 @@ Works as expected.
 
 
 #+header: :stdin s-amb-permanent-set-test-ordinary-set
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb-pset>>
@@ -37610,7 +37600,7 @@ marked by "try-again" are also unrolled.
 #+RESULTS: s-amb-iffail-test
 
 #+header: :stdin s-amb-iffail-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb-pset-iffail>>
@@ -37722,7 +37712,7 @@ Just test the code? Hm... too easy to be true.
 #+end_src
 
 #+header: :stdin s-amb-another-prime-sum-pair
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb-pset-iffail>>
@@ -37924,7 +37914,7 @@ And that's it? A neat way to iterate over everything.
 #+RESULTS: s-amb-iffail-test
 
 #+header: :stdin s-amb-require-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb-pset-iffail-require>>
@@ -38070,7 +38060,7 @@ add some exercises about the ~call/cc~ operation in the newer RNRS.
 #+end_src
 
 #+header: :stdin prolog-input-examples
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -38847,7 +38837,7 @@ exit
 #+end_src
 
 #+header: :stdin prolog-input-simple-queries
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -39049,7 +39039,7 @@ No need to use ~or~, huh?
 #+end_src
 
 #+header: :stdin prolog-input-compound-queries
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -39324,7 +39314,7 @@ A not too hard exercise.
 
 
 #+header: :stdin prolog-input-own-rules
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -40450,7 +40440,7 @@ exit
 
 
 #+header: :stdin prolog-input-bigshot
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -40738,7 +40728,7 @@ declaring it here.
 
 
 #+header: :stdin prolog-input-meetings
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -41017,7 +41007,7 @@ simplify such relations for mere mortals?
 
 
 #+header: :stdin prolog-lives-near
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -41946,7 +41936,7 @@ exit
 #+end_src
 
 #+header: :stdin prolog-input-next-to
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -42319,7 +42309,7 @@ Seems to find neighbours well.
 #+end_src
 
 #+header: :stdin prolog-input-last-pair
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -42595,7 +42585,7 @@ matcher less greedy...
 #+end_src
 
 #+header: :stdin prolog-input-genesis
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -42887,7 +42877,7 @@ A bit ugly, as most of UML, but simplicity matters.
 
 
 #+header: :stdin prolog-input-broken-outranked-by
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results none
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results none
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -42941,7 +42931,7 @@ a loop, since ?middle-manager is unbound.
 
 
 #+header: :stdin prolog-wheel
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -43171,7 +43161,7 @@ variable in the match.
 
 
 #+header: :stdin prolog-wheel-explanation
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -43375,7 +43365,7 @@ Indeed, Oliver has four second-degree subordinates.
 #+end_src
 
 #+header: :stdin prolog-input-accumulation
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
 
   <<prolog-glue>>
   <<put-and-get>>
@@ -43622,7 +43612,7 @@ recursive infinite rule.
 #+end_src
 
 #+header: :stdin prolog-input-loop-detector
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
 
   <<prolog-glue>>
 
@@ -44385,7 +44375,7 @@ seem to be able to write a symmetric ~reverse~. My bad.
 #+end_src
 
 #+header: :stdin prolog-input-reverse-rule
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
 
   <<prolog-glue>>
   <<put-and-get>>
@@ -50017,7 +50007,7 @@ Prolog textbook. It is advised to read some other one.
 
 
 #+header: :stdin prolog-input-great-grandchildren
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -54729,7 +54719,7 @@ chapter 3, it was not used, since ~interleave~ was used.
 
 
 #+header: :stdin prolog-input-test-assert
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -54841,7 +54831,7 @@ exit
 #+end_src
 
 #+header: :stdin prolog-input-database-test
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -55075,7 +55065,7 @@ because this combination will print the results only after they are
 delivered. Therefore I install a debugging snap-in.
 
 #+header: :stdin prolog-input-broken-simple-query-and-disjoin
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
 
   <<prolog-glue>>
   <<prolog-debugging-help>>
@@ -56183,7 +56173,7 @@ exit
 
 
 #+header: :stdin prolog-input-broken-simple-query-and-disjoin
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
 
   <<prolog-glue>>
   <<prolog-debugging-help>>
@@ -57402,7 +57392,7 @@ singleton appendage and interleaving is the same thing.
 #+end_src
 
 #+header: :stdin prolog-input-unique
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -57705,7 +57695,7 @@ Turned out (surprisingly) to be much easier than I thought.
 
 
 #+header: :stdin prolog-input-better-and
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<prolog-glue>>
   <<accumulate>>
   <<put-and-get>>
@@ -58038,7 +58028,7 @@ extended frames if needed.
 
 
 #+header: :stdin prolog-input-lazy-negate
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports code :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports code :results output scalar code :exports both
   <<prolog-glue>>
   <<put-and-get>>
   <<streams-common>>
@@ -58634,7 +58624,7 @@ exit
 #+end_src
 
 #+header: :stdin s-amb-prolog-implementing-prolog-in-amb
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb-pset-iffail>>
@@ -60051,7 +60041,7 @@ retval))))
 
 
 #+header: :stdin prolog-environments
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :results output scalar code :exports both
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :results output scalar code :exports both
 <<s-glue1>>
 <<s-amb-amb-implementation>>
 <<s-amb-analyze-eval-with-let-amb-ramb-pset-iffail>>
@@ -61418,7 +61408,7 @@ job of restoring and saving the return address. They can be removed.
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -61863,7 +61853,7 @@ This turned out to be easier than I had thought.
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -61908,7 +61898,7 @@ This turned out to be easier than I had thought.
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -61936,7 +61926,7 @@ This turned out to be easier than I had thought.
      CLOSED: [2020-02-25 Tue 21:58]
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62003,7 +61993,7 @@ Let's modify ~extract-labels~:
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62052,7 +62042,7 @@ ERROR: extract-labels: ambiguous label: here
 Errors as expected.
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62116,7 +62106,7 @@ Works as expected.
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62203,7 +62193,7 @@ it work like this: ~(assign (reg a) (reg b))~.
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62292,7 +62282,7 @@ fib-done)
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62357,7 +62347,7 @@ fib-done)
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62420,7 +62410,7 @@ checking to ~(save)~ and ~(restore)~.
 With the variable control, the following code should fail.
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62463,7 +62453,7 @@ ERROR: make-restore: restoring register values into different register is forbid
 But the old one should still work.
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62555,7 +62545,7 @@ As expected.
 The test for this behaviour would be:
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62596,7 +62586,7 @@ The test for this behaviour would be:
 The Fibonacci machine should still work.
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62786,7 +62776,7 @@ Extend the assembler to store:
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -62845,7 +62835,7 @@ metadata=
 Seems to be working.
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -63001,7 +62991,7 @@ metadata=
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -63059,7 +63049,7 @@ metadata=
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -63147,7 +63137,7 @@ Let us define the factorial machine first:
 Let us test the simulator on the unmodified machine.
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -63192,7 +63182,7 @@ Let us test the simulator on the unmodified machine.
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<regmac-glue1>>
   <<regmac-make-machine>>
   <<regmac-make-register>>
@@ -63386,7 +63376,7 @@ of pushes and stack depth.
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
     <<regmac-glue1>>
     <<regmac-make-machine>>
     <<regmac-make-register>>
@@ -63582,7 +63572,7 @@ Instructions executed: 496
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
     <<regmac-glue1>>
     <<regmac-make-machine>>
     <<regmac-make-register>>
@@ -63982,7 +63972,7 @@ Firstly, let us make the assembler save labels.
 
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
     <<regmac-glue1>>
     <<regmac-make-machine>>
     <<regmac-make-register>>
@@ -64208,7 +64198,7 @@ Seems to be working, and the labels don't interfere with instruction counting.
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
     <<regmac-glue1>>
     <<regmac-make-machine>>
     <<regmac-make-register-tracing>>
@@ -64710,7 +64700,7 @@ into the instruction sequence.
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
       <<regmac-glue1>>
       <<regmac-make-machine>>
       <<regmac-make-register-tracing>>
@@ -64918,7 +64908,7 @@ end)
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
       <<regmac-glue1>>
       <<regmac-make-machine>>
       <<regmac-make-register-tracing>>
@@ -65021,7 +65011,7 @@ end
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
       <<regmac-glue1>>
       <<regmac-make-machine>>
       <<regmac-make-register-tracing>>
@@ -65200,7 +65190,7 @@ end)
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
       <<regmac-glue1>>
       <<regmac-make-machine>>
       <<regmac-make-register-tracing>>
@@ -65344,7 +65334,7 @@ end)
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#! /usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#! /usr/local/bin/chibi-scheme" :exports both :results output scalar code
       <<regmac-glue1>>
       <<regmac-make-machine>>
       <<regmac-make-register-tracing>>
@@ -65841,7 +65831,7 @@ EOF
 #+end_src
 
 #+header: :stdin eceval-test-append
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
 <<ec-eceval>>
 (start eceval)
 #+end_src
@@ -65929,7 +65919,7 @@ EOF
 #+end_src
 
 #+header: :stdin eceval-test-let-cond
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -66101,7 +66091,7 @@ ev-cond-process-cond-actions
 #+end_src
 
 #+header: :stdin eceval-test-let-cond-primitive
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -66387,7 +66377,7 @@ EOF
 #+end_src
 
 #+header: :stdin eceval-test-lazy
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -66530,7 +66520,7 @@ print-result
 #+end_src
 
 #+header: :stdin eceval-test-factorial-iter
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -66657,7 +66647,7 @@ call we are needing. There are a lot more pushes, evidently.
 #+end_src
 
 #+header: :stdin eceval-test-factorial-recursive
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -66820,7 +66810,7 @@ ev-sequence-end
 #+end_src
 
 #+header: :stdin eceval-test-factorial-combined
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -66981,7 +66971,7 @@ Indeed, both the depth and the number of pushes increase with n:
 #+end_src
 
 #+header: :stdin eceval-test-fibonacci
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -67243,7 +67233,7 @@ An we know that Fibonacci numbers grow roughly like \(\varphi^n\), the golden ra
 
 
 #+header: :stdin eceval-test-error-undefined-variable-2
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -67415,7 +67405,7 @@ primitive-error
 
 
 #+header: :stdin eceval-test-error-undefined-variable-function
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-primitive-with-errors>>
@@ -67934,7 +67924,7 @@ primitive procedures.
 
 #+name: c-test-factorial-1
 #+header: :stdin empty
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output
 <<ec-glue1>>
 <<c-compile>>
 <<c-make-instruction-sequence-empty-instruction-sequence>>
@@ -68142,7 +68132,7 @@ primitive procedures.
 
 
 #+header: :stdin c-test-compile-and-go
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -68336,7 +68326,7 @@ symbol-optimization-shortcut
 
 
 #+header: :stdin ec-test-symbol-optimization
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-primitive-with-errors>>
@@ -68439,7 +68429,7 @@ in compile-time.
 
 #+name: c-test-factorial-2
 #+header: :stdin empty
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output verbatim
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output verbatim
   <<ec-glue1>>
   <<c-compile>>
   <<c-make-instruction-sequence-empty-instruction-sequence>>
@@ -68622,7 +68612,7 @@ functions have equal efficiency.
 
 #+name: c-test-factorial-iter
 #+header: :stdin empty
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output verbatim
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output verbatim
 
 <<ec-glue1>>
   <<c-compile>>
@@ -68818,7 +68808,7 @@ Diff highlights this for us.
      CLOSED: [2020-03-05 Thu 21:30]
 
 #+name: decompilation-listing-535
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :results output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :results output
 (import (scheme small))
 (import (srfi 159))
 (show #t  (pretty (quote ( (env) (val)
@@ -68984,7 +68974,7 @@ to left.
 
 #+name: c-listing-decompilation
 #+header: :stdin empty :exports code
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :results output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :results output
 <<ec-glue1>>
   <<c-compile>>
   <<c-make-instruction-sequence-empty-instruction-sequence>>
@@ -69202,7 +69192,7 @@ left-to-right.
 #+end_src
 
 #+header: :stdin c-test-compile-and-go
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -69318,7 +69308,7 @@ ok
 
 
 #+header: :stdin c-test-compile-and-go
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -69473,7 +69463,7 @@ The following modification always saves the registers given to it.
 
 #+name: c-test-preserving-standard
 #+header: :stdin empty  :exports code
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :results output code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :results output code
 <<ec-glue1>>
   <<c-compile>>
   <<c-make-instruction-sequence-empty-instruction-sequence>>
@@ -69518,7 +69508,7 @@ The following modification always saves the registers given to it.
 
 #+name: c-test-preserving-unoptimized
 #+header: :stdin empty  :exports code
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :results output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :results output
 <<ec-glue1>>
   <<c-compile>>
   <<c-make-instruction-sequence-empty-instruction-sequence>>
@@ -69765,7 +69755,7 @@ primitive operation is called (definitely not touching ~continue~).
 ***** c the ~factorial~ example
 
 #+header: :stdin c-test-compile-and-go
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -69935,7 +69925,7 @@ I am fine with it.
 #+end_src
 
 #+header: :stdin c-test-compile-and-go
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -70348,7 +70338,7 @@ code using ~lexical-address-lookup~.
 
 
 #+header: :stdin c-test-lexical
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<ec-s-additional-syntax>>
@@ -70735,7 +70725,7 @@ This exercise took me way more than it deserves.
 #+end_src
 
 #+header: :stdin empty
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results code output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results code output
   (import (scheme small))
   (import (scheme list))
   (import (scheme show))
@@ -70779,7 +70769,7 @@ WARNING: reference to undefined variable: append-instruction-sequences
 
 
 #+header: :stdin c-test-lexical-scanning-out-defines
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output
   <<ec-glue1>>
   <<s-truefalse>>
   <<s-let-implementation>>
@@ -70974,7 +70964,7 @@ ok
 
 
 #+header: :stdin c-test-lexical-opencode
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<s-let-implementation>>
@@ -71289,7 +71279,7 @@ Seems to be working.
 
 
 #+header: :stdin c-test-factorial-compiler
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<s-let-implementation>>
@@ -71510,7 +71500,7 @@ implementation saves and restores too much.
 
 
 #+header: :stdin c-test-fibonacci-compiler
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<s-let-implementation>>
@@ -71789,7 +71779,7 @@ Therefore the compiled version is almost 18 times faster.
 
 
 #+header: :stdin c-test-call-interpreted
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<s-let-implementation>>
@@ -72008,7 +71998,7 @@ ev-compile-and-run
 #+end_src
 
 #+header: :stdin c-test-compile-and-run
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<s-let-implementation>>
@@ -72182,7 +72172,7 @@ print-result
 
 
 #+header: :stdin c-test-read-compile-execute-print
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results output scalar code
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results output scalar code
   <<ec-glue1>>
   <<s-truefalse>>
   <<s-let-implementation>>
@@ -72412,7 +72402,7 @@ cat <<'EOF'
 
 
 #+header: :stdin compiled-metacircular-test
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results code output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results code output
     <<ec-glue1>>
     <<s-truefalse>>
     <<s-let-implementation>>
@@ -72587,7 +72577,7 @@ working with many :noweb blocks is unmanageable.
 
 
 #+hame: low-level-interpreter-original-code
-#+begin_src scheme :shebang "#!/usr/bin/chibi-scheme" :exports code :results none
+#+begin_src scheme :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results none
     (import (scheme small))
     (import (scheme list))
     (import (srfi 159))
@@ -77867,7 +77857,7 @@ if ( val1 == make_symbol(\"unbound\")) then\n
 The following piece of code is only needed to shorten the testing.
 
 #+name: simple-test-ec-to-fortran
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :stdin empty :exports none :results output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :stdin empty :exports none :results output
     <<ec-glue1>>
     <<s-truefalse>>
     <<s-let-implementation>>
@@ -77944,7 +77934,7 @@ Welcome to the rudimentary scheme in fortran
 #+end_src
 
 #+name: fortran-scheme-interpreter-interlogue
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports code :results code output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports code :results code output
       <<ec-glue1>>
       <<s-truefalse>>
       <<s-let-implementation>>
@@ -78142,7 +78132,7 @@ ok
 
 Since debugging took a lot of time, I'm testing this again:
 
-#+begin_src shell :shebang "#!/usr/bin/chibi-scheme" :exports both :results code output
+#+begin_src shell :shebang "#!/usr/local/bin/chibi-scheme" :exports both :results code output
     <<ec-glue1>>
     <<s-truefalse>>
     <<s-let-implementation>>
